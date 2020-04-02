@@ -109,41 +109,33 @@ SPI_CLK
 Text Label 3550 3550 0    50   ~ 0
 SPI_CS1
 Entry Wire Line
-	3600 7000 3700 7100
-Entry Wire Line
-	3600 6900 3700 7000
-Entry Wire Line
 	3600 6800 3700 6900
 Entry Wire Line
 	3600 6700 3700 6800
-Text Label 3750 6800 0    50   ~ 0
+Entry Wire Line
+	3600 6600 3700 6700
+Text Label 3750 6700 0    50   ~ 0
 OmSPI0
-Text Label 3750 6900 0    50   ~ 0
+Text Label 3750 6800 0    50   ~ 0
 OmSPI1
-Text Label 3750 7000 0    50   ~ 0
+Text Label 3750 6900 0    50   ~ 0
 OmSPI2
-Text Label 3750 7100 0    50   ~ 0
-OmSPI3
+Wire Wire Line
+	3700 6700 4600 6700
 Wire Wire Line
 	3700 6800 4600 6800
 Wire Wire Line
 	3700 6900 4600 6900
-Wire Wire Line
-	3700 7000 4600 7000
-Wire Wire Line
-	3700 7100 4600 7100
-Text Label 4600 6800 2    50   ~ 0
+Text Label 4600 6700 2    50   ~ 0
 SPI_MISO
-Text Label 4600 6900 2    50   ~ 0
+Text Label 4600 6800 2    50   ~ 0
 SPI_CLK
-Text Label 4600 7000 2    50   ~ 0
+Text Label 4600 6900 2    50   ~ 0
 SPI_MOSI
-Text Label 4600 7100 2    50   ~ 0
-SPI_CS1
 Wire Bus Line
-	3600 6250 3350 6250
-Text HLabel 3350 6250 0    50   BiDi ~ 0
-OmSPI[3,0]
+	3600 6150 3350 6150
+Text HLabel 3350 6150 0    50   BiDi ~ 0
+OmSPI[4,0]
 Text HLabel 6350 3550 2    50   Input ~ 0
 RX_OM
 Text HLabel 6350 3450 2    50   Output ~ 0
@@ -212,8 +204,41 @@ Wire Wire Line
 	4650 3450 4350 3450
 Wire Wire Line
 	4650 3550 4350 3550
+Wire Wire Line
+	3700 7100 4600 7100
+Entry Wire Line
+	3600 7000 3700 7100
+Text Label 4600 7000 2    50   ~ 0
+SPI_CS1
+Wire Wire Line
+	3700 7000 4600 7000
+Text Label 3750 7000 0    50   ~ 0
+OmSPI3
+Entry Wire Line
+	3600 6900 3700 7000
+Text Label 3750 7100 0    50   ~ 0
+OmSPI4
+Text Label 3550 3950 0    50   ~ 0
+FPGA_RST
+$Comp
+L Device:R R?
+U 1 1 5E87BB84
+P 4200 3950
+F 0 "R?" V 4150 3750 50  0000 C CNN
+F 1 "R" V 4200 3950 50  0000 C CNN
+F 2 "" V 4130 3950 50  0001 C CNN
+F 3 "~" H 4200 3950 50  0001 C CNN
+	1    4200 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 3950 3550 3950
+Wire Wire Line
+	4350 3950 4650 3950
+Text Label 4600 7100 2    50   ~ 0
+FPGA_RST
 Wire Bus Line
-	3600 6250 3600 7000
+	3600 6150 3600 7000
 Wire Bus Line
 	2500 6250 2500 7000
 $EndSCHEMATC

@@ -152,12 +152,12 @@ Wire Wire Line
 	4550 3850 4300 3850
 Wire Wire Line
 	4550 3950 4300 3950
-Wire Bus Line
-	1300 6700 1300 7350
-Wire Bus Line
-	2650 6700 2650 7350
 Text HLabel 4300 3850 0    50   Input ~ 0
 RX_M1
 Text HLabel 4300 3950 0    50   Output ~ 0
 TX_M1
+Wire Bus Line
+	1300 6700 1300 7350
+Wire Bus Line
+	2650 6700 2650 7350
 $EndSCHEMATC

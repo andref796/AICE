@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Memory_Flash_2)(type Legacy)(uri /home/hyde/Digital/Embebidos/Kicad_lib/Memory_Flash_2.lib)(options "")(descr ""))
+  (lib (name w25q)(type Legacy)(uri ${KIPRJMOD}/w25q.lib)(options "")(descr ""))
+)

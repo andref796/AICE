@@ -81,38 +81,26 @@ Wire Wire Line
 	1300 7450 1800 7450
 Wire Wire Line
 	1300 7550 1800 7550
-Text HLabel 2100 6900 0    50   BiDi ~ 0
-Om_SPI[3,0]
+Text HLabel 2100 6800 0    50   BiDi ~ 0
+Om_SPI[4,0]
 Wire Bus Line
-	2100 6900 2250 6900
-Entry Wire Line
-	2250 7450 2350 7550
+	2100 6800 2250 6800
 Entry Wire Line
 	2250 7350 2350 7450
 Entry Wire Line
 	2250 7250 2350 7350
 Entry Wire Line
 	2250 7150 2350 7250
-Wire Wire Line
-	2350 7250 2850 7250
-Wire Wire Line
-	2350 7350 2850 7350
-Wire Wire Line
-	2350 7450 2850 7450
-Wire Wire Line
-	2350 7550 2850 7550
-Wire Bus Line
-	2250 6900 2250 7450
-Wire Bus Line
-	1200 6900 1200 7450
+Entry Wire Line
+	2250 7050 2350 7150
+Text Label 2350 7150 0    50   ~ 0
+Om_SPI0
 Text Label 2350 7250 0    50   ~ 0
-SPI0
+Om_SPI1
 Text Label 2350 7350 0    50   ~ 0
-SPI1
+Om_SPI2
 Text Label 2350 7450 0    50   ~ 0
-SPI2
-Text Label 2350 7550 0    50   ~ 0
-SPI3
+Om_SPI3
 Text Label 1300 7150 0    50   ~ 0
 COMM0
 Text Label 1300 7250 0    50   ~ 0
@@ -124,14 +112,119 @@ COMM3
 Text Label 1300 7550 0    50   ~ 0
 COMM4
 $Comp
-L Memory_Flash:W25Q128JVS U?
-U 1 1 5E904339
-P 9450 5200
-F 0 "U?" H 9450 5781 50  0000 C CNN
-F 1 "W25Q128JVS" H 9450 5690 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 9450 5200 50  0001 C CNN
-F 3 "http://www.winbond.com/resource-files/w25q128jv_dtr%20revc%2003272018%20plus.pdf" H 9450 5200 50  0001 C CNN
-	1    9450 5200
+L w25q:W25Q U?
+U 1 1 5E861C02
+P 8800 5150
+F 0 "U?" H 8800 5625 50  0000 C CNN
+F 1 "W25Q" H 8800 5534 50  0000 C CNN
+F 2 "" H 8800 5250 50  0001 C CNN
+F 3 "" H 8800 5250 50  0001 C CNN
+	1    8800 5150
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6700 3900 7100 3900
+Wire Wire Line
+	6700 4000 7100 4000
+Wire Wire Line
+	6700 4100 7100 4100
+Wire Wire Line
+	6700 4200 7100 4200
+Text Label 7100 3900 2    50   ~ 0
+iCE_MISO
+Text Label 7100 4000 2    50   ~ 0
+iCE_MOSI
+Text Label 7100 4100 2    50   ~ 0
+iCE_SCLK
+Text Label 7100 4200 2    50   ~ 0
+iCE_SS
+Entry Wire Line
+	2250 7450 2350 7550
+Wire Wire Line
+	2350 7550 2850 7550
+Text Label 2350 7550 0    50   ~ 0
+Om_SPI4
+Text Label 3100 7150 2    50   ~ 0
+iCE_MISO
+Text Label 3100 7350 2    50   ~ 0
+iCE_MOSI
+Text Label 3100 7250 2    50   ~ 0
+iCE_SCLK
+Text Label 3100 7450 2    50   ~ 0
+iCE_SS
+Wire Wire Line
+	2350 7150 3100 7150
+Wire Wire Line
+	2350 7250 3100 7250
+Wire Wire Line
+	2350 7350 3100 7350
+Wire Wire Line
+	2350 7450 3100 7450
+Wire Wire Line
+	9200 5000 9650 5000
+Wire Wire Line
+	9200 5100 9650 5100
+Wire Wire Line
+	9200 5200 9650 5200
+Wire Wire Line
+	9200 5400 9650 5400
+Text Label 9650 5000 2    50   ~ 0
+iCE_SCLK
+Text Label 9650 5100 2    50   ~ 0
+iCE_MISO
+Text Label 9650 5200 2    50   ~ 0
+iCE_MOSI
+Text Label 9650 4900 2    50   ~ 0
+iCE_SS
+$Comp
+L Device:R R?
+U 1 1 5E89BD86
+P 9650 5600
+F 0 "R?" H 9720 5646 50  0000 L CNN
+F 1 "R" H 9720 5555 50  0000 L CNN
+F 2 "" V 9580 5600 50  0001 C CNN
+F 3 "~" H 9650 5600 50  0001 C CNN
+	1    9650 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E89D2A2
+P 9900 5600
+F 0 "R?" H 9970 5646 50  0000 L CNN
+F 1 "R" H 9970 5555 50  0000 L CNN
+F 2 "" V 9830 5600 50  0001 C CNN
+F 3 "~" H 9900 5600 50  0001 C CNN
+	1    9900 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 5400 9650 5450
+Wire Wire Line
+	9900 5300 9900 5450
+Wire Wire Line
+	9200 5300 9900 5300
+Wire Wire Line
+	9650 5750 9650 5900
+Wire Wire Line
+	9650 5900 9900 5900
+Wire Wire Line
+	9900 5900 9900 5750
+$Comp
+L Device:R R?
+U 1 1 5E89EE9F
+P 9900 4750
+F 0 "R?" H 9970 4796 50  0000 L CNN
+F 1 "R" H 9970 4705 50  0000 L CNN
+F 2 "" V 9830 4750 50  0001 C CNN
+F 3 "~" H 9900 4750 50  0001 C CNN
+	1    9900 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 4900 9900 4900
+Wire Bus Line
+	1200 6900 1200 7450
+Wire Bus Line
+	2250 6800 2250 7450
 $EndSCHEMATC

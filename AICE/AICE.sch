@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -18,7 +18,7 @@ S 5650 1600 1650 1550
 U 5E829221
 F0 "iCE40" 50
 F1 "iCE40.sch" 50
-F2 "COMM[4,0]" B L 5650 1700 50 
+F2 "COMM[3,0]" B L 5650 1700 50 
 F3 "Om_SPI[3,0]" B L 5650 3000 50 
 $EndSheet
 $Sheet
@@ -56,7 +56,7 @@ S 2850 1600 1750 1600
 U 5E828FD1
 F0 "sipeedm1w" 50
 F1 "sipeedm1w.sch" 50
-F2 "COMM[4,0]" B R 4600 1700 50 
+F2 "COMM[3,0]" B R 4600 1700 50 
 F3 "JTAG[5,0]" B R 4600 3050 50 
 F4 "RX_M1" I R 4600 2800 50 
 F5 "TX_M1" O R 4600 2900 50 
@@ -67,4 +67,10 @@ Wire Bus Line
 	5150 4950 5150 3000
 Wire Bus Line
 	5150 3000 5650 3000
+$Sheet
+S 8650 1450 950  600 
+U 5E926AEA
+F0 "power" 50
+F1 "power.sch" 50
+$EndSheet
 $EndSCHEMATC

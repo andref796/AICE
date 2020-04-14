@@ -1,0 +1,526 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C?
+U 1 1 5E93319F
+P 2300 1450
+AR Path="/5E829221/5E93319F" Ref="C?"  Part="1" 
+AR Path="/5E926AEA/5E93319F" Ref="C?"  Part="1" 
+F 0 "C?" V 2250 1250 50  0000 L CNN
+F 1 "220u" V 2250 1500 50  0000 L CNN
+F 2 "" H 2338 1300 50  0001 C CNN
+F 3 "~" H 2300 1450 50  0001 C CNN
+	1    2300 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E93394E
+P 2900 1450
+AR Path="/5E829221/5E93394E" Ref="C?"  Part="1" 
+AR Path="/5E926AEA/5E93394E" Ref="C?"  Part="1" 
+F 0 "C?" V 2850 1250 50  0000 L CNN
+F 1 "0.001u" V 2850 1500 50  0000 L CNN
+F 2 "" H 2938 1300 50  0001 C CNN
+F 3 "~" H 2900 1450 50  0001 C CNN
+	1    2900 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 3550 1050 2    50   Input ~ 0
++5V
+$Comp
+L Device:C C?
+U 1 1 5E933588
+P 2600 1450
+AR Path="/5E829221/5E933588" Ref="C?"  Part="1" 
+AR Path="/5E926AEA/5E933588" Ref="C?"  Part="1" 
+F 0 "C?" V 2550 1250 50  0000 L CNN
+F 1 "0.1u" V 2550 1500 50  0000 L CNN
+F 2 "" H 2638 1300 50  0001 C CNN
+F 3 "~" H 2600 1450 50  0001 C CNN
+	1    2600 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 2000 2600 2000
+Connection ~ 2600 2000
+Wire Wire Line
+	2600 2000 2900 2000
+$Comp
+L power:GND #PWR?
+U 1 1 5E935150
+P 2600 2000
+F 0 "#PWR?" H 2600 1750 50  0001 C CNN
+F 1 "GND" H 2605 1827 50  0000 C CNN
+F 2 "" H 2600 2000 50  0001 C CNN
+F 3 "" H 2600 2000 50  0001 C CNN
+	1    2600 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5E936838
+P 1300 1250
+F 0 "J?" H 1357 1717 50  0000 C CNN
+F 1 "USB_B_Micro" H 1357 1626 50  0000 C CNN
+F 2 "" H 1450 1200 50  0001 C CNN
+F 3 "~" H 1450 1200 50  0001 C CNN
+	1    1300 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E9400E0
+P 1300 1850
+F 0 "#PWR?" H 1300 1600 50  0001 C CNN
+F 1 "GND" H 1305 1677 50  0000 C CNN
+F 2 "" H 1300 1850 50  0001 C CNN
+F 3 "" H 1300 1850 50  0001 C CNN
+	1    1300 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 1650 1300 1800
+Wire Wire Line
+	1200 1650 1200 1800
+Wire Wire Line
+	1200 1800 1300 1800
+Connection ~ 1300 1800
+Wire Wire Line
+	1300 1800 1300 1850
+NoConn ~ 1600 1450
+NoConn ~ 1600 1350
+NoConn ~ 1600 1250
+Wire Wire Line
+	1600 1050 2300 1050
+Wire Wire Line
+	2900 1050 2900 1300
+Connection ~ 2900 1050
+Wire Wire Line
+	2600 1050 2600 1300
+Connection ~ 2600 1050
+Wire Wire Line
+	2600 1050 2900 1050
+Wire Wire Line
+	2300 1050 2300 1300
+Connection ~ 2300 1050
+Wire Wire Line
+	2300 1050 2600 1050
+$Comp
+L Device:LED_ALT D?
+U 1 1 5E945C52
+P 3200 1300
+F 0 "D?" H 3100 1350 50  0000 R CNN
+F 1 "RED" H 3400 1350 50  0000 R CNN
+F 2 "" H 3200 1300 50  0001 C CNN
+F 3 "~" H 3200 1300 50  0001 C CNN
+	1    3200 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E946EE4
+P 3200 1750
+F 0 "R?" V 3150 1550 50  0000 L CNN
+F 1 "2k2" V 3200 1650 50  0000 L CNN
+F 2 "" V 3130 1750 50  0001 C CNN
+F 3 "~" H 3200 1750 50  0001 C CNN
+	1    3200 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1050 3200 1050
+Wire Wire Line
+	3200 1150 3200 1050
+Connection ~ 3200 1050
+Wire Wire Line
+	3200 1050 3550 1050
+Wire Wire Line
+	3200 1450 3200 1600
+Wire Wire Line
+	3200 1900 3200 2000
+Wire Wire Line
+	3200 2000 2900 2000
+Connection ~ 2900 2000
+Wire Wire Line
+	2900 1600 2900 2000
+Wire Wire Line
+	2600 1600 2600 2000
+Wire Wire Line
+	2300 1600 2300 2000
+$Comp
+L LDO:ZLDO1117G33TA U?
+U 1 1 5E972FF1
+P 2050 2900
+F 0 "U?" H 2050 3265 50  0000 C CNN
+F 1 "ZLDO1117G33TA" H 2050 3174 50  0000 C CNN
+F 2 "" H 2050 2900 50  0001 C CNN
+F 3 "" H 2050 2900 50  0001 C CNN
+	1    2050 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LDO:ZLDO1117G18TA U?
+U 1 1 5E973403
+P 5950 2550
+F 0 "U?" H 5950 2915 50  0000 C CNN
+F 1 "ZLDO1117G18TA" H 5950 2824 50  0000 C CNN
+F 2 "" H 5950 2550 50  0001 C CNN
+F 3 "" H 5950 2550 50  0001 C CNN
+	1    5950 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LDO:ZLDO1117G12TA U?
+U 1 1 5E973B18
+P 2100 4000
+F 0 "U?" H 2100 4365 50  0000 C CNN
+F 1 "ZLDO1117G12TA" H 2100 4274 50  0000 C CNN
+F 2 "" H 2100 4000 50  0001 C CNN
+F 3 "" H 2100 4000 50  0001 C CNN
+	1    2100 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E976B4B
+P 1350 3050
+AR Path="/5E829221/5E976B4B" Ref="C?"  Part="1" 
+AR Path="/5E926AEA/5E976B4B" Ref="C?"  Part="1" 
+F 0 "C?" V 1300 2850 50  0000 L CNN
+F 1 "33u" V 1300 3100 50  0000 L CNN
+F 2 "" H 1388 2900 50  0001 C CNN
+F 3 "~" H 1350 3050 50  0001 C CNN
+	1    1350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E97F513
+P 2700 3050
+AR Path="/5E829221/5E97F513" Ref="C?"  Part="1" 
+AR Path="/5E926AEA/5E97F513" Ref="C?"  Part="1" 
+F 0 "C?" V 2650 2850 50  0000 L CNN
+F 1 "33u" V 2650 3100 50  0000 L CNN
+F 2 "" H 2738 2900 50  0001 C CNN
+F 3 "~" H 2700 3050 50  0001 C CNN
+	1    2700 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E9804A8
+P 2950 3050
+AR Path="/5E829221/5E9804A8" Ref="C?"  Part="1" 
+AR Path="/5E926AEA/5E9804A8" Ref="C?"  Part="1" 
+F 0 "C?" V 2900 2850 50  0000 L CNN
+F 1 "0.1u" V 2900 3100 50  0000 L CNN
+F 2 "" H 2988 2900 50  0001 C CNN
+F 3 "~" H 2950 3050 50  0001 C CNN
+	1    2950 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 2800 1350 2800
+Wire Wire Line
+	1350 2900 1350 2800
+Connection ~ 1350 2800
+Wire Wire Line
+	1350 2800 1150 2800
+Wire Wire Line
+	1350 3200 1350 3350
+Wire Wire Line
+	1350 3350 2050 3350
+Wire Wire Line
+	2950 3350 2950 3200
+Wire Wire Line
+	2700 3200 2700 3350
+Connection ~ 2700 3350
+Wire Wire Line
+	2700 3350 2950 3350
+Wire Wire Line
+	2050 3200 2050 3350
+Connection ~ 2050 3350
+Wire Wire Line
+	2050 3350 2700 3350
+Wire Wire Line
+	2500 2800 2700 2800
+Wire Wire Line
+	2950 2900 2950 2800
+Connection ~ 2950 2800
+Wire Wire Line
+	2950 2800 3150 2800
+Wire Wire Line
+	2700 2900 2700 2800
+Connection ~ 2700 2800
+Wire Wire Line
+	2700 2800 2950 2800
+Text GLabel 1150 2800 0    50   Input ~ 0
++5V
+Text GLabel 3150 2800 2    50   Input ~ 0
++3V3_FPGA
+$Comp
+L Device:C C?
+U 1 1 5E994C5F
+P 1400 4150
+AR Path="/5E829221/5E994C5F" Ref="C?"  Part="1" 
+AR Path="/5E926AEA/5E994C5F" Ref="C?"  Part="1" 
+F 0 "C?" V 1350 3950 50  0000 L CNN
+F 1 "33u" V 1350 4200 50  0000 L CNN
+F 2 "" H 1438 4000 50  0001 C CNN
+F 3 "~" H 1400 4150 50  0001 C CNN
+	1    1400 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E994C65
+P 2750 4150
+AR Path="/5E829221/5E994C65" Ref="C?"  Part="1" 
+AR Path="/5E926AEA/5E994C65" Ref="C?"  Part="1" 
+F 0 "C?" V 2700 3950 50  0000 L CNN
+F 1 "33u" V 2700 4200 50  0000 L CNN
+F 2 "" H 2788 4000 50  0001 C CNN
+F 3 "~" H 2750 4150 50  0001 C CNN
+	1    2750 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E994C6B
+P 3000 4150
+AR Path="/5E829221/5E994C6B" Ref="C?"  Part="1" 
+AR Path="/5E926AEA/5E994C6B" Ref="C?"  Part="1" 
+F 0 "C?" V 2950 3950 50  0000 L CNN
+F 1 "0.1u" V 2950 4200 50  0000 L CNN
+F 2 "" H 3038 4000 50  0001 C CNN
+F 3 "~" H 3000 4150 50  0001 C CNN
+	1    3000 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 3900 1400 3900
+Wire Wire Line
+	1400 4000 1400 3900
+Connection ~ 1400 3900
+Wire Wire Line
+	1400 3900 1200 3900
+Wire Wire Line
+	1400 4300 1400 4450
+Wire Wire Line
+	1400 4450 2100 4450
+Wire Wire Line
+	3000 4450 3000 4300
+Wire Wire Line
+	2750 4300 2750 4450
+Connection ~ 2750 4450
+Wire Wire Line
+	2750 4450 3000 4450
+Wire Wire Line
+	2100 4300 2100 4450
+Connection ~ 2100 4450
+Wire Wire Line
+	2100 4450 2750 4450
+Wire Wire Line
+	2550 3900 2750 3900
+Wire Wire Line
+	3000 4000 3000 3900
+Connection ~ 3000 3900
+Wire Wire Line
+	3000 3900 3200 3900
+Wire Wire Line
+	2750 4000 2750 3900
+Connection ~ 2750 3900
+Wire Wire Line
+	2750 3900 3000 3900
+Text GLabel 1200 3900 0    50   Input ~ 0
++5V
+Text GLabel 3200 3900 2    50   Input ~ 0
++1V2_FPGA
+$Comp
+L LDO:ZLDO1117G33TA U?
+U 1 1 5E9BBC37
+P 5950 1400
+F 0 "U?" H 5950 1765 50  0000 C CNN
+F 1 "ZLDO1117G33TA" H 5950 1674 50  0000 C CNN
+F 2 "" H 5950 1400 50  0001 C CNN
+F 3 "" H 5950 1400 50  0001 C CNN
+	1    5950 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E9BBC3D
+P 5250 1550
+AR Path="/5E829221/5E9BBC3D" Ref="C?"  Part="1" 
+AR Path="/5E926AEA/5E9BBC3D" Ref="C?"  Part="1" 
+F 0 "C?" V 5200 1350 50  0000 L CNN
+F 1 "33u" V 5200 1600 50  0000 L CNN
+F 2 "" H 5288 1400 50  0001 C CNN
+F 3 "~" H 5250 1550 50  0001 C CNN
+	1    5250 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E9BBC43
+P 6600 1550
+AR Path="/5E829221/5E9BBC43" Ref="C?"  Part="1" 
+AR Path="/5E926AEA/5E9BBC43" Ref="C?"  Part="1" 
+F 0 "C?" V 6550 1350 50  0000 L CNN
+F 1 "33u" V 6550 1600 50  0000 L CNN
+F 2 "" H 6638 1400 50  0001 C CNN
+F 3 "~" H 6600 1550 50  0001 C CNN
+	1    6600 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E9BBC49
+P 6850 1550
+AR Path="/5E829221/5E9BBC49" Ref="C?"  Part="1" 
+AR Path="/5E926AEA/5E9BBC49" Ref="C?"  Part="1" 
+F 0 "C?" V 6800 1350 50  0000 L CNN
+F 1 "0.1u" V 6800 1600 50  0000 L CNN
+F 2 "" H 6888 1400 50  0001 C CNN
+F 3 "~" H 6850 1550 50  0001 C CNN
+	1    6850 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1300 5250 1300
+Wire Wire Line
+	5250 1400 5250 1300
+Connection ~ 5250 1300
+Wire Wire Line
+	5250 1300 5050 1300
+Wire Wire Line
+	5250 1700 5250 1850
+Wire Wire Line
+	5250 1850 5950 1850
+Wire Wire Line
+	6850 1850 6850 1700
+Wire Wire Line
+	6600 1700 6600 1850
+Connection ~ 6600 1850
+Wire Wire Line
+	6600 1850 6850 1850
+Wire Wire Line
+	5950 1700 5950 1850
+Connection ~ 5950 1850
+Wire Wire Line
+	5950 1850 6600 1850
+Wire Wire Line
+	6400 1300 6600 1300
+Wire Wire Line
+	6850 1400 6850 1300
+Connection ~ 6850 1300
+Wire Wire Line
+	6850 1300 7050 1300
+Wire Wire Line
+	6600 1400 6600 1300
+Connection ~ 6600 1300
+Wire Wire Line
+	6600 1300 6850 1300
+Text GLabel 5050 1300 0    50   Input ~ 0
++5V
+Text GLabel 7050 1300 2    50   Input ~ 0
++3V3_MCU
+Text GLabel 7050 2450 2    50   Input ~ 0
++1V8_MCU
+Text GLabel 5050 2450 0    50   Input ~ 0
++5V
+Wire Wire Line
+	6600 2450 6850 2450
+Connection ~ 6600 2450
+Wire Wire Line
+	6600 2550 6600 2450
+Wire Wire Line
+	6850 2450 7050 2450
+Connection ~ 6850 2450
+Wire Wire Line
+	6850 2550 6850 2450
+Wire Wire Line
+	6400 2450 6600 2450
+Wire Wire Line
+	5950 3000 6600 3000
+Connection ~ 5950 3000
+Wire Wire Line
+	5950 2850 5950 3000
+Wire Wire Line
+	6600 3000 6850 3000
+Connection ~ 6600 3000
+Wire Wire Line
+	6600 2850 6600 3000
+Wire Wire Line
+	6850 3000 6850 2850
+Wire Wire Line
+	5250 3000 5950 3000
+Wire Wire Line
+	5250 2850 5250 3000
+Wire Wire Line
+	5250 2450 5050 2450
+Connection ~ 5250 2450
+Wire Wire Line
+	5250 2550 5250 2450
+Wire Wire Line
+	5500 2450 5250 2450
+$Comp
+L Device:C C?
+U 1 1 5E9C50BC
+P 6850 2700
+AR Path="/5E829221/5E9C50BC" Ref="C?"  Part="1" 
+AR Path="/5E926AEA/5E9C50BC" Ref="C?"  Part="1" 
+F 0 "C?" V 6800 2500 50  0000 L CNN
+F 1 "0.1u" V 6800 2750 50  0000 L CNN
+F 2 "" H 6888 2550 50  0001 C CNN
+F 3 "~" H 6850 2700 50  0001 C CNN
+	1    6850 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E9C50B6
+P 6600 2700
+AR Path="/5E829221/5E9C50B6" Ref="C?"  Part="1" 
+AR Path="/5E926AEA/5E9C50B6" Ref="C?"  Part="1" 
+F 0 "C?" V 6550 2500 50  0000 L CNN
+F 1 "33u" V 6550 2750 50  0000 L CNN
+F 2 "" H 6638 2550 50  0001 C CNN
+F 3 "~" H 6600 2700 50  0001 C CNN
+	1    6600 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E9C50B0
+P 5250 2700
+AR Path="/5E829221/5E9C50B0" Ref="C?"  Part="1" 
+AR Path="/5E926AEA/5E9C50B0" Ref="C?"  Part="1" 
+F 0 "C?" V 5200 2500 50  0000 L CNN
+F 1 "33u" V 5200 2750 50  0000 L CNN
+F 2 "" H 5288 2550 50  0001 C CNN
+F 3 "~" H 5250 2700 50  0001 C CNN
+	1    5250 2700
+	1    0    0    -1  
+$EndComp
+Text Notes 1800 1000 0    50   ~ 0
+FALTA INDUCTANCIA
+Text Notes 3200 4200 0    50   ~ 0
+DEBE HABER UNA RESISTENCIA?
+Text Notes 7250 1500 0    50   ~ 0
+EL CONDENSADOR DE 0.1 EVITA PONER EL CONDENSADOR EN EL OTRO LADO?
+$EndSCHEMATC

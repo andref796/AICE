@@ -1,8 +1,10 @@
 (sym_lib_table
-  (lib (name Memory_Flash_2)(type Legacy)(uri /home/hyde/Digital/Embebidos/Kicad_lib/Memory_Flash_2.lib)(options "")(descr ""))
   (lib (name w25q)(type Legacy)(uri ${KIPRJMOD}/w25q.lib)(options "")(descr ""))
   (lib (name LDO)(type Legacy)(uri ${KIPRJMOD}/LDO.lib)(options "")(descr ""))
   (lib (name ADC)(type Legacy)(uri ${KIPRJMOD}/ADC.lib)(options "")(descr ""))
   (lib (name pulse)(type Legacy)(uri ${KIPRJMOD}/pulse.lib)(options "")(descr ""))
   (lib (name OSC)(type Legacy)(uri ${KIPRJMOD}/OSC.lib)(options "")(descr ""))
+  (lib (name SRF)(type Legacy)(uri ${KIPRJMOD}/SRF.lib)(options "")(descr ""))
+  (lib (name AICE-rescue)(type Legacy)(uri ${KIPRJMOD}/AICE-rescue.lib)(options "")(descr ""))
+  (lib (name M1&M1w)(type Legacy)(uri ${KIPRJMOD}/M1&M1w.lib)(options "")(descr ""))
 )

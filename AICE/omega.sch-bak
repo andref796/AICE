@@ -604,8 +604,6 @@ Wire Wire Line
 Connection ~ 9200 3750
 Wire Wire Line
 	10050 3750 10500 3750
-Text Notes 10300 3250 2    50   ~ 0
-CONDENSADOR ES NECESARIO?
 Wire Wire Line
 	4450 2500 4850 2500
 Text Label 4850 2500 2    50   ~ 0

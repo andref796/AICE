@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name AICE)(type KiCad)(uri ${KIPRJMOD}/AICE.pretty)(options "")(descr ""))
+)

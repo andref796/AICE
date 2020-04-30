@@ -7,4 +7,5 @@
   (lib (name SRF)(type Legacy)(uri ${KIPRJMOD}/SRF.lib)(options "")(descr ""))
   (lib (name AICE-rescue)(type Legacy)(uri ${KIPRJMOD}/AICE-rescue.lib)(options "")(descr ""))
   (lib (name M1&M1w)(type Legacy)(uri ${KIPRJMOD}/M1&M1w.lib)(options "")(descr ""))
+  (lib (name Q_S8)(type Legacy)(uri ${KIPRJMOD}/Q_S8.lib)(options "")(descr ""))
 )

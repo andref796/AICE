@@ -1,11 +1,32 @@
-16737972029735445
+16742737226162445
 AICE
-SOIC-8 208-mil
+ASFLMB
 
 
 0
+4
+4
+AICE
+QFN-72_25.4x25.4_Pitch1.27mm
+
+
 0
+78
+74
+AICE
+SMS_BUTTON
+
+
 0
+4
+4
+AICE
+SRF2012
+
+
+0
+4
+4
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)

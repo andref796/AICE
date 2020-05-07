@@ -975,27 +975,27 @@ Wire Notes Line
 Wire Wire Line
 	5950 2800 5650 2800
 Text Label 5650 2800 0    50   ~ 0
-IO1
+IO11
 Wire Wire Line
 	5950 2900 5650 2900
 Text Label 5650 2900 0    50   ~ 0
-IO2
+IO12
 Wire Wire Line
 	5950 3000 5650 3000
 Text Label 5650 3000 0    50   ~ 0
-IO3
+IO13
 Wire Wire Line
 	5950 3100 5650 3100
 Text Label 5650 3100 0    50   ~ 0
-IO4
+IO10
 Wire Wire Line
 	5950 3200 5650 3200
 Text Label 5650 3200 0    50   ~ 0
-IO5
+IO14
 Wire Wire Line
 	5950 3300 5650 3300
 Text Label 5650 3300 0    50   ~ 0
-IO6
+IO9
 Wire Wire Line
 	5950 3400 5650 3400
 Text Label 5650 3400 0    50   ~ 0
@@ -1005,33 +1005,21 @@ Wire Wire Line
 Text Label 5650 3500 0    50   ~ 0
 IO8
 Wire Wire Line
-	4550 4950 4250 4950
-Text Label 4250 4950 0    50   ~ 0
-IO19
-Wire Wire Line
-	4550 5050 4250 5050
-Text Label 4250 5050 0    50   ~ 0
-IO20
-Wire Wire Line
 	4550 5150 4250 5150
 Text Label 4250 5150 0    50   ~ 0
-IO21
-Wire Wire Line
-	4550 5250 4250 5250
-Text Label 4250 5250 0    50   ~ 0
-IO22
+SDA
 Wire Wire Line
 	4550 5350 4250 5350
 Text Label 4250 5350 0    50   ~ 0
-IO23
+SCK
 Wire Wire Line
 	4550 5450 4250 5450
 Text Label 4250 5450 0    50   ~ 0
-IO24
+IO17
 Wire Wire Line
 	4550 5550 4250 5550
 Text Label 4250 5550 0    50   ~ 0
-IO25
+IO18
 Wire Wire Line
 	4550 5850 4250 5850
 Text Label 4250 5850 0    50   ~ 0
@@ -1039,51 +1027,31 @@ CLK_IN
 Wire Wire Line
 	4550 5650 4250 5650
 Text Label 4250 5650 0    50   ~ 0
-SCK
+IO19
 Wire Wire Line
 	4550 5750 4250 5750
 Text Label 4250 5750 0    50   ~ 0
-SDA
+IO21
 Wire Wire Line
 	7700 5250 8000 5250
 Text Label 8000 5250 2    50   ~ 0
-IO9
+IO6
 Wire Wire Line
 	7700 5350 8000 5350
 Text Label 8000 5350 2    50   ~ 0
-IO10
+IO5
 Wire Wire Line
 	7700 5450 8000 5450
 Text Label 8000 5450 2    50   ~ 0
-IO11
+IO4
 Wire Wire Line
 	7700 5550 8000 5550
 Text Label 8000 5550 2    50   ~ 0
-IO12
+IO3
 Wire Wire Line
 	7700 5650 8000 5650
 Text Label 8000 5650 2    50   ~ 0
-IO13
-Wire Wire Line
-	7700 5750 8000 5750
-Text Label 8000 5750 2    50   ~ 0
-IO14
-Wire Wire Line
-	7700 5850 8000 5850
-Text Label 8000 5850 2    50   ~ 0
-IO15
-Wire Wire Line
-	7700 5950 8000 5950
-Text Label 8000 5950 2    50   ~ 0
-IO16
-Wire Wire Line
-	7700 6050 8000 6050
-Text Label 8000 6050 2    50   ~ 0
-IO17
-Wire Wire Line
-	7700 6150 8000 6150
-Text Label 8000 6150 2    50   ~ 0
-IO18
+IO2
 $Comp
 L power:GND #PWR016
 U 1 1 5ED49F18
@@ -1143,9 +1111,9 @@ Text Label 12200 7150 2    50   ~ 0
 IO12
 Text Label 12200 7250 2    50   ~ 0
 IO14
-Text Label 11000 7350 0    50   ~ 0
+Text Label 13200 6650 0    50   ~ 0
 SDA
-Text Label 12200 7350 2    50   ~ 0
+Text Label 14400 6750 2    50   ~ 0
 SCK
 $Comp
 L power:GND #PWR020
@@ -1182,18 +1150,16 @@ Wire Wire Line
 Connection ~ 13450 6500
 Wire Wire Line
 	13450 6500 13450 6550
-Text Label 14400 6650 2    50   ~ 0
+Text Label 12200 7350 2    50   ~ 0
 IO16
-Text Label 14400 6750 2    50   ~ 0
-IO18
-Text Label 14400 6850 2    50   ~ 0
-IO20
-Text Label 14400 6950 2    50   ~ 0
-IO22
 Text Label 14400 7050 2    50   ~ 0
-IO24
+IO18
+Text Label 14400 7150 2    50   ~ 0
+IO20
+Text Label 14400 7250 2    50   ~ 0
+IO22
 Text Label 14400 7350 2    50   ~ 0
-SDA
+IO24
 Wire Notes Line
 	10400 6100 10400 7700
 Wire Notes Line
@@ -1202,9 +1168,9 @@ Wire Notes Line
 	15050 7700 15050 6100
 Wire Notes Line
 	15050 6100 10400 6100
-Text Label 14400 7150 2    50   ~ 0
+Text Label 14400 6850 2    50   ~ 0
 E+
-Text Label 14400 7250 2    50   ~ 0
+Text Label 14400 6950 2    50   ~ 0
 S-
 Text Label 11000 7250 0    50   ~ 0
 IO13
@@ -1341,15 +1307,15 @@ Wire Wire Line
 Wire Wire Line
 	4550 6350 4250 6350
 Text Label 4250 6350 0    50   ~ 0
-RGB_R
+IO23
 Wire Wire Line
 	4550 6450 4250 6450
 Text Label 4250 6450 0    50   ~ 0
-RGB_G
+IO24
 Wire Wire Line
 	4550 6550 4250 6550
 Text Label 4250 6550 0    50   ~ 0
-RGB_B
+IO25
 Wire Wire Line
 	7700 4950 8100 4950
 Wire Notes Line
@@ -1670,7 +1636,7 @@ Wire Wire Line
 Wire Wire Line
 	11000 7250 11350 7250
 Wire Wire Line
-	11000 7350 11350 7350
+	13200 6650 13550 6650
 Wire Wire Line
 	11850 6650 12200 6650
 Wire Wire Line
@@ -1686,29 +1652,25 @@ Wire Wire Line
 Wire Wire Line
 	11850 7250 12200 7250
 Wire Wire Line
-	11850 7350 12200 7350
-Text Label 13200 6650 0    50   ~ 0
+	14050 6750 14400 6750
+Text Label 11000 7350 0    50   ~ 0
 IO15
-Text Label 13200 7250 0    50   ~ 0
-S+
-Text Label 13200 7350 0    50   ~ 0
-SCK
-Text Label 13200 7150 0    50   ~ 0
-IO25
-Text Label 13200 7050 0    50   ~ 0
-IO23
-Text Label 13200 6950 0    50   ~ 0
-IO21
 Text Label 13200 6850 0    50   ~ 0
-IO19
+S+
 Text Label 13200 6750 0    50   ~ 0
+SCK
+Text Label 13200 7350 0    50   ~ 0
+IO25
+Text Label 13200 7250 0    50   ~ 0
+IO23
+Text Label 13200 7150 0    50   ~ 0
+IO21
+Text Label 13200 7050 0    50   ~ 0
+IO19
+Text Label 13200 6950 0    50   ~ 0
 IO17
 Wire Wire Line
-	13200 6650 13550 6650
-Wire Wire Line
-	13200 6750 13550 6750
-Wire Wire Line
-	13200 6850 13550 6850
+	11000 7350 11350 7350
 Wire Wire Line
 	13200 6950 13550 6950
 Wire Wire Line
@@ -1720,29 +1682,31 @@ Wire Wire Line
 Wire Wire Line
 	13200 7350 13550 7350
 Wire Wire Line
-	14050 6650 14400 6650
+	13200 6850 13550 6850
 Wire Wire Line
-	14050 6750 14400 6750
+	13200 6750 13550 6750
 Wire Wire Line
-	14050 6850 14400 6850
-Wire Wire Line
-	14050 6950 14400 6950
+	11850 7350 12200 7350
 Wire Wire Line
 	14050 7050 14400 7050
-Wire Wire Line
-	14050 7350 14400 7350
 Wire Wire Line
 	14050 7150 14400 7150
 Wire Wire Line
 	14050 7250 14400 7250
+Wire Wire Line
+	14050 7350 14400 7350
+Wire Wire Line
+	14050 6850 14400 6850
+Wire Wire Line
+	14050 6950 14400 6950
 Text Label 4100 5950 0    50   ~ 0
-SPIC_MISO
+IO20
 Text Label 4100 6050 0    50   ~ 0
-SPIC_SCLK
+IO16
 Text Label 4100 6150 0    50   ~ 0
-SPIC_MOSI
+IO22
 Text Label 4100 6250 0    50   ~ 0
-SPIC_CS
+IO15
 Wire Wire Line
 	4550 5950 4100 5950
 Wire Wire Line
@@ -1762,10 +1726,6 @@ F 3 "" H 7850 4300 50  0001 C CNN
 	1    7850 4300
 	0    -1   -1   0   
 $EndComp
-Wire Bus Line
-	6400 8250 6400 8900
-Wire Bus Line
-	4600 8250 4600 8800
 $Comp
 L Device:LED_ALT D2
 U 1 1 5EA37FED
@@ -1777,4 +1737,44 @@ F 3 "~" H 6400 5150 50  0001 C CNN
 	1    6400 5150
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	7700 5850 8000 5850
+Wire Wire Line
+	7700 5750 8450 5750
+Text Label 8450 5750 2    50   ~ 0
+SPIC_MISO
+Wire Wire Line
+	7700 5950 8450 5950
+Wire Wire Line
+	7700 6050 8450 6050
+Wire Wire Line
+	7700 6150 8450 6150
+Text Label 8450 6150 2    50   ~ 0
+SPIC_CS
+Text Label 8450 6050 2    50   ~ 0
+SPIC_MOSI
+Text Label 8450 5950 2    50   ~ 0
+SPIC_SCLK
+Text Label 8000 5850 2    50   ~ 0
+IO1
+Wire Wire Line
+	14050 6650 14400 6650
+Text Label 14400 6650 2    50   ~ 0
+SDA
+Text Label 4250 5050 0    50   ~ 0
+RGB_R
+Text Label 4250 4950 0    50   ~ 0
+RGB_G
+Text Label 4250 5250 0    50   ~ 0
+RGB_B
+Wire Wire Line
+	4250 5250 4550 5250
+Wire Wire Line
+	4250 4950 4550 4950
+Wire Wire Line
+	4250 5050 4550 5050
+Wire Bus Line
+	4600 8250 4600 8800
+Wire Bus Line
+	6400 8250 6400 8900
 $EndSCHEMATC

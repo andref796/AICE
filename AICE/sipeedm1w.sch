@@ -315,7 +315,7 @@ F 3 "" H 9500 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9500 3050 9850 3050
+	9500 3050 9750 3050
 Connection ~ 9500 3050
 $Comp
 L power:GND #PWR033
@@ -1652,8 +1652,39 @@ Entry Wire Line
 	3000 7250 3100 7350
 Entry Wire Line
 	3000 7350 3100 7450
+$Comp
+L Device:C C?
+U 1 1 5EB890D2
+P 9750 3300
+AR Path="/5E829221/5EB890D2" Ref="C?"  Part="1" 
+AR Path="/5E828FD1/5EB890D2" Ref="C61"  Part="1" 
+F 0 "C61" V 9700 3100 50  0000 L CNN
+F 1 "0.1u" V 9700 3350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9788 3150 50  0001 C CNN
+F 3 "~" H 9750 3300 50  0001 C CNN
+	1    9750 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9750 3150 9750 3050
+Wire Wire Line
+	9750 3450 9750 3600
+$Comp
+L power:GND #PWR078
+U 1 1 5EB890DA
+P 9750 3600
+F 0 "#PWR078" H 9750 3350 50  0001 C CNN
+F 1 "GND" H 9755 3427 50  0000 C CNN
+F 2 "" H 9750 3600 50  0001 C CNN
+F 3 "" H 9750 3600 50  0001 C CNN
+	1    9750 3600
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	3000 6700 3000 7350
 Wire Bus Line
 	1650 6700 1650 7350
+Connection ~ 9750 3050
+Wire Wire Line
+	9750 3050 9850 3050
 $EndSCHEMATC

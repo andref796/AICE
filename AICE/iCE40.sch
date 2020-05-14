@@ -1005,12 +1005,12 @@ Wire Wire Line
 Text Label 5650 3500 0    50   ~ 0
 IO8
 Wire Wire Line
-	4550 5150 4250 5150
-Text Label 4250 5150 0    50   ~ 0
-SDA
-Wire Wire Line
 	4550 5350 4250 5350
 Text Label 4250 5350 0    50   ~ 0
+SDA
+Wire Wire Line
+	4550 5150 4250 5150
+Text Label 4250 5150 0    50   ~ 0
 SCK
 Wire Wire Line
 	4550 5450 4250 5450
@@ -1111,9 +1111,9 @@ Text Label 12200 7150 2    50   ~ 0
 IO12
 Text Label 12200 7250 2    50   ~ 0
 IO14
-Text Label 13200 6750 0    50   ~ 0
+Text Label 13200 6850 0    50   ~ 0
 SDA
-Text Label 14400 6950 2    50   ~ 0
+Text Label 14400 6850 2    50   ~ 0
 SCK
 $Comp
 L power:GND #PWR020
@@ -1636,7 +1636,7 @@ Wire Wire Line
 Wire Wire Line
 	11000 7250 11350 7250
 Wire Wire Line
-	13200 6750 13550 6750
+	13200 6850 13550 6850
 Wire Wire Line
 	11850 6650 12200 6650
 Wire Wire Line
@@ -1652,12 +1652,12 @@ Wire Wire Line
 Wire Wire Line
 	11850 7250 12200 7250
 Wire Wire Line
-	14050 6950 14400 6950
+	14050 6850 14400 6850
 Text Label 11000 7350 0    50   ~ 0
 IO15
 Text Label 13200 6650 0    50   ~ 0
 S+
-Text Label 13200 6850 0    50   ~ 0
+Text Label 13200 6750 0    50   ~ 0
 SCK
 Text Label 13200 7350 0    50   ~ 0
 IO25
@@ -1684,7 +1684,7 @@ Wire Wire Line
 Wire Wire Line
 	13200 6650 13550 6650
 Wire Wire Line
-	13200 6850 13550 6850
+	13200 6750 13550 6750
 Wire Wire Line
 	11850 7350 12200 7350
 Wire Wire Line
@@ -1758,8 +1758,8 @@ SPIC_SCLK
 Text Label 8000 5850 2    50   ~ 0
 IO1
 Wire Wire Line
-	14050 6850 14400 6850
-Text Label 14400 6850 2    50   ~ 0
+	14050 6950 14400 6950
+Text Label 14400 6950 2    50   ~ 0
 SDA
 Text Label 4250 5050 0    50   ~ 0
 RGB_R

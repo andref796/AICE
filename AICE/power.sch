@@ -265,8 +265,6 @@ F 3 "~" H 3050 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1700 3950 1650 3950
-Wire Wire Line
 	1450 4050 1450 3950
 Wire Wire Line
 	1450 4350 1450 4500
@@ -279,13 +277,9 @@ Wire Wire Line
 Connection ~ 2800 4500
 Wire Wire Line
 	2800 4500 3050 4500
-Wire Wire Line
-	2150 4350 2150 4500
 Connection ~ 2150 4500
 Wire Wire Line
 	2150 4500 2800 4500
-Wire Wire Line
-	2600 3950 2800 3950
 Wire Wire Line
 	3050 4050 3050 3950
 Connection ~ 3050 3950
@@ -1169,17 +1163,6 @@ F 3 "" H 2100 2950 50  0001 C CNN
 	1    2100 2950
 	1    0    0    -1  
 $EndComp
-$Comp
-L LDO:ZLDO1117G12TA U14
-U 1 1 5EA7B8AA
-P 2150 4050
-F 0 "U14" H 2150 4415 50  0000 C CNN
-F 1 "ZLDO1117G12TA" H 2150 4324 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223" H 2200 4500 50  0001 C CNN
-F 3 "" H 2150 4050 50  0001 C CNN
-	1    2150 4050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1350 1700 1350 1900
 Text GLabel 1000 1750 3    50   Input ~ 0
@@ -1383,4 +1366,21 @@ Wire Wire Line
 Connection ~ 3400 1100
 Wire Wire Line
 	3400 1100 3600 1100
+$Comp
+L Regulator_Linear:XC6206PxxxMR U14
+U 1 1 5EC5F7A3
+P 2150 3950
+F 0 "U14" H 2150 4192 50  0000 C CNN
+F 1 "XC6206P122MR" H 2150 4101 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2150 4175 50  0001 C CIN
+F 3 "https://www.torexsemi.com/file/xc6206/XC6206.pdf" H 2150 3950 50  0001 C CNN
+	1    2150 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3950 2800 3950
+Wire Wire Line
+	2150 4250 2150 4500
+Wire Wire Line
+	1650 3950 1850 3950
 $EndSCHEMATC

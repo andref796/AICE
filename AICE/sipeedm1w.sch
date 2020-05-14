@@ -347,7 +347,7 @@ U 1 1 5E993C3E
 P 5750 2550
 F 0 "U11" H 5758 3975 50  0000 C CNN
 F 1 "DVP_PORT" H 5758 3884 50  0000 C CNN
-F 2 "Connector_FFC-FPC:Molex_502244-2430_1x24-1MP_P0.5mm_Horizontal" H 5700 3900 50  0001 C CNN
+F 2 "Connector_FFC-FPC:Molex_502231-2400_1x24-1SH_P0.5mm_Vertical" H 5700 3900 50  0001 C CNN
 F 3 "" H 5700 3900 50  0001 C CNN
 	1    5750 2550
 	1    0    0    -1  
@@ -910,18 +910,18 @@ Wire Wire Line
 	5450 4700 5450 5000
 Wire Wire Line
 	5250 4700 5250 5000
-Text Label 3400 850  3    50   ~ 0
+Text Label 3200 850  3    50   ~ 0
 RGB_R
 Text Label 3300 850  3    50   ~ 0
 RGB_G
-Text Label 3200 850  3    50   ~ 0
+Text Label 3400 850  3    50   ~ 0
 RGB_B
 Wire Wire Line
-	3200 850  3200 1150
+	3400 850  3400 1150
 Wire Wire Line
 	3300 850  3300 1150
 Wire Wire Line
-	3400 850  3400 1150
+	3200 850  3200 1150
 Text Label 3500 800  3    50   ~ 0
 RST
 Wire Wire Line
@@ -1226,114 +1226,6 @@ Wire Wire Line
 	750  3300 750  3250
 Wire Wire Line
 	750  3250 1300 3250
-$Comp
-L pulse:SMS U?
-U 1 1 5EA9A7E7
-P 5550 7050
-AR Path="/5E829221/5EA9A7E7" Ref="U?"  Part="1" 
-AR Path="/5E828FD1/5EA9A7E7" Ref="U10"  Part="1" 
-F 0 "U10" H 5550 7325 50  0000 C CNN
-F 1 "SMS" H 5550 7234 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 5950 7250 50  0001 C CNN
-F 3 "" H 5950 7250 50  0001 C CNN
-	1    5550 7050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5300 7000 5300 6650
-Wire Wire Line
-	5300 6650 5800 6650
-Wire Wire Line
-	5800 7000 5800 6650
-Connection ~ 5800 6650
-Wire Wire Line
-	5800 6650 6150 6650
-$Comp
-L power:GND #PWR?
-U 1 1 5EA9A7F2
-P 5300 7300
-AR Path="/5E829221/5EA9A7F2" Ref="#PWR?"  Part="1" 
-AR Path="/5E828FD1/5EA9A7F2" Ref="#PWR040"  Part="1" 
-F 0 "#PWR040" H 5300 7050 50  0001 C CNN
-F 1 "GND" H 5305 7127 50  0000 C CNN
-F 2 "" H 5300 7300 50  0001 C CNN
-F 3 "" H 5300 7300 50  0001 C CNN
-	1    5300 7300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5EA9A7F8
-P 5800 7300
-AR Path="/5E829221/5EA9A7F8" Ref="#PWR?"  Part="1" 
-AR Path="/5E828FD1/5EA9A7F8" Ref="#PWR042"  Part="1" 
-F 0 "#PWR042" H 5800 7050 50  0001 C CNN
-F 1 "GND" H 5805 7127 50  0000 C CNN
-F 2 "" H 5800 7300 50  0001 C CNN
-F 3 "" H 5800 7300 50  0001 C CNN
-	1    5800 7300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 7300 5800 7150
-Wire Wire Line
-	5300 7150 5300 7300
-$Comp
-L power:GND #PWR?
-U 1 1 5EA9A800
-P 6150 7150
-AR Path="/5E829221/5EA9A800" Ref="#PWR?"  Part="1" 
-AR Path="/5E828FD1/5EA9A800" Ref="#PWR043"  Part="1" 
-F 0 "#PWR043" H 6150 6900 50  0001 C CNN
-F 1 "GND" H 6155 6977 50  0000 C CNN
-F 2 "" H 6150 7150 50  0001 C CNN
-F 3 "" H 6150 7150 50  0001 C CNN
-	1    6150 7150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6150 6750 6150 6650
-Connection ~ 6150 6650
-Wire Wire Line
-	6150 7050 6150 7150
-$Comp
-L Device:C C?
-U 1 1 5EA9A809
-P 6150 6900
-AR Path="/5E829221/5EA9A809" Ref="C?"  Part="1" 
-AR Path="/5E828FD1/5EA9A809" Ref="C25"  Part="1" 
-F 0 "C25" H 6265 6946 50  0000 L CNN
-F 1 "0.1u" H 6265 6855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6188 6750 50  0001 C CNN
-F 3 "~" H 6150 6900 50  0001 C CNN
-	1    6150 6900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6150 6650 6600 6650
-Text Label 4550 6650 0    50   ~ 0
-+3V3
-Text Label 6600 6650 2    50   ~ 0
-BOOT
-$Comp
-L Device:R R?
-U 1 1 5EA9A7DF
-P 5050 6650
-AR Path="/5E926AEA/5EA9A7DF" Ref="R?"  Part="1" 
-AR Path="/5E829221/5EA9A7DF" Ref="R?"  Part="1" 
-AR Path="/5E828FD1/5EA9A7DF" Ref="R88"  Part="1" 
-F 0 "R88" V 5100 6750 50  0000 L CNN
-F 1 "10K" V 5050 6600 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4980 6650 50  0001 C CNN
-F 3 "~" H 5050 6650 50  0001 C CNN
-	1    5050 6650
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5200 6650 5300 6650
-Connection ~ 5300 6650
-Wire Wire Line
-	4550 6650 4900 6650
 Wire Notes Line
 	550  6500 4350 6500
 Wire Notes Line

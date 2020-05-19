@@ -833,8 +833,6 @@ Wire Wire Line
 	7700 2900 7700 2800
 Connection ~ 7700 2800
 Wire Wire Line
-	7700 2800 7500 2800
-Wire Wire Line
 	7700 3200 7700 3350
 Wire Wire Line
 	7700 3350 7900 3350
@@ -858,8 +856,6 @@ Wire Wire Line
 Connection ~ 9050 2800
 Wire Wire Line
 	9050 2800 9300 2800
-Text GLabel 7500 2800 0    50   Input ~ 0
-+5V
 Text GLabel 9500 2800 2    50   Input ~ 0
 +2V8_MCU
 Text GLabel 9500 3950 2    50   Input ~ 0
@@ -1383,4 +1379,8 @@ Wire Wire Line
 	2150 4250 2150 4500
 Wire Wire Line
 	1650 3950 1850 3950
+Text GLabel 7300 2800 0    50   Input ~ 0
++5V
+Wire Wire Line
+	7300 2800 7700 2800
 $EndSCHEMATC

@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/hyde/Digital/Embebidos/Proyecto/AICE/AICE.sch)
-    (date "mié 20 may 2020 15:44:16 -05")
+    (date "mié 20 may 2020 19:02:44 -05")
     (tool "Eeschema 5.1.5-52549c5~86~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -773,7 +773,7 @@
       (tstamp 5E953A1A))
     (comp (ref C22)
       (value 33u)
-      (footprint Capacitor_SMD:C_0805_2012Metric)
+      (footprint Capacitor_THT:CP_Radial_D5.0mm_P2.00mm)
       (datasheet ~)
       (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
       (sheetpath (names /omega/) (tstamps /5E829246/))
